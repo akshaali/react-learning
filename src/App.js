@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import RouterComponent from './utility/Routes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <RouterComponent />
     </div>
   );
 }
 
 export default App;
+
+/*
+1. install routing library
+2. create simple non-nested Routes
+3. linking the routes
+4. 404 - Page Not Found route
+*/
