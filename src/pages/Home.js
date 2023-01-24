@@ -9,7 +9,10 @@ const Home = () => {
           <Link to={"/about"}>About us here......</Link>
         </li>
         <li>
-          <Link to={"/contact-us"}>To contact us, click here.</Link>
+          <Link to={"/contact-us"}>To contact us</Link>
+        </li>
+        <li>
+          <Link to={"/cat-list"}>Cat listing.</Link>
         </li>
       </ul>
     </div>
