@@ -2,7 +2,7 @@ import { DECREAMENT_COUNTER, INCREAMENT_COUNTER } from "../Actions/counter";
 
 const initialState = {
   counter: 0,
-  title: "counter",
+  title: "step",
 };
 
 const CounterReducer = (state = initialState, action) => {
