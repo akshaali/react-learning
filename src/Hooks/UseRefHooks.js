@@ -18,6 +18,8 @@ const UseRefHookComponent = () => {
 
   console.log("useRef: ", countRef.current);
 
+  const fun = () => {}
+
   return (
     <div>
       <h2>React different Hooks</h2>
