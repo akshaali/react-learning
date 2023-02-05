@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-import About from "./componets/About";
-import Home from "./componets/Home";
-import NoPage from "./componets/noPage";
+import About from "../componets/About";
+import Home from "../componets/Home";
+import NoPage from "../componets/noPage";
 
 const RouteComp = () => {
   return (
