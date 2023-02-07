@@ -5,9 +5,9 @@ import { fetchCatListAction } from "../Redux/Actions/getCatListAction";
 const CatList = () => {
   const dispatch = useDispatch();
   const catList = useSelector((state) => state.getCatListReducer.catList);
-
   console.log("catListcatList", catList);
   useEffect(() => {
+    console.log("inside the useEffect")
     dispatch(
       fetchCatListAction({
         method: "get",

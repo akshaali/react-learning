@@ -1,6 +1,13 @@
+import CreateSagaMiddleware from "redux-saga";
+import { configureStore } from "@reduxjs/toolkit";
 import Reducer from "./Reducers";
-import {configureStore} from "@reduxjs/toolkit"
+import rootSaga from "./Saga";
 
-const store  = configureStore({reducer: Reducer});
+const sagaMiddleware = CreateSagaMiddleware();
+const store = configureStore({
+  reducer: Reducer,
+  middleware: [sagaMiddleware],
+});
 
+sagaMiddleware.run(rootSaga);
 export default store;
